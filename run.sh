@@ -10,4 +10,8 @@
    docker run -d -p 8080:80 \
      -v $(pwd)/httpd.conf:/usr/local/apache2/conf/httpd.conf \
      -v $(pwd)/htdocs:/usr/local/apache2/htdocs \
+     -v $(pwd)/aiao:/usr/local/apache2/htdocs/aiao \
+     -v $(pwd)/claimont:/usr/local/apache2/htdocs/claimont \
+     -v $(pwd)/impactont:/usr/local/apache2/htdocs/impactont \
+     -v $(pwd)/infocomm:/usr/local/apache2/htdocs/infocomm \
      --name my-apache htaccess_test
