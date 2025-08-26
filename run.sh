@@ -1,5 +1,7 @@
 #!/bin/bash
 
+   sudo systemctl stop apache2
+
    # Stop and remove any existing container with the same name
    docker stop my-apache 2>/dev/null
    docker rm my-apache 2>/dev/null
