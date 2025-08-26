@@ -7,7 +7,7 @@
    docker rm my-apache 2>/dev/null
 
    # Run the Docker container with volume mapping
-   docker run -d -p 8080:80 \
+   docker run -d -p 80:80 \
      -v $(pwd)/httpd.conf:/usr/local/apache2/conf/httpd.conf \
      -v $(pwd)/htdocs:/usr/local/apache2/htdocs \
      -v $(pwd)/aiao:/usr/local/apache2/htdocs/aiao \
